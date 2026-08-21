@@ -14,8 +14,8 @@ The planned baseline is ImageNet-pretrained EfficientNet-B0 using PyTorch and `t
 
 IDRiD is third-party research data and is not stored in this Git repository. Place or generate the disease-grading portion under `data/raw/IDRiD/` as documented in [data/README.md](data/README.md).
 
-Dataset source: [Indian Diabetic Retinopathy Image Dataset (IDRiD)](https://idrid.grand-challenge.org/Data/), licensed under CC BY 4.0.
+Dataset source: the complete Kaggle mirror [Indian Diabetic Retinopathy Image Dataset (IDRiD)](https://www.kaggle.com/datasets/abdullahshafi315/indian-diabetic-retinopathy-image-datasetidrid), with the official [IEEE DataPort release](https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid) retained as the provenance reference. The Kaggle page identifies the mirror as CC BY-NC 4.0; keep the raw files private and follow that license until the official archive is obtained directly.
 
 ## Status
 
-Repository and grading dataset preparation only. Model implementation has not started.
+Repository and grading dataset preparation only. The local copy has been arranged and audited; the exact-duplicate warning in [data/README.md](data/README.md) must be handled before training. Model implementation has not started.

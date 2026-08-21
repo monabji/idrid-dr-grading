@@ -18,14 +18,14 @@ The final demo is a research/hackathon prototype, not a diagnostic medical devic
 
 ## 2. Inspection status and important limitation
 
-Inspection on 2026-08-21 found that the assigned workspace `C:\Users\doodl\OneDrive\Desktop\Dr`:
+Planning inspection on 2026-08-21 initially found that the assigned workspace `C:\Users\doodl\OneDrive\Desktop\Dr`:
 
 - is empty except for this plan after planning;
 - is not currently a Git repository;
 - contains no IDRiD images, CSV files, archives, notebooks, source code, or hidden project configuration;
 - has no IDRiD-named dataset or grading archive in the usual nearby Desktop, Downloads, Documents, or OneDrive locations searched.
 
-Therefore, local file counts, decoded pixel dimensions, corrupt-image checks, filename/CSV joins, duplicate hashes, and the exact on-disk directory names **could not be verified from local data**. The dataset facts below are the expected official IDRiD grading-task facts and must be confirmed by an audit script as the first implementation gate once the data is placed in the workspace.
+That initial limitation is now resolved for the local Kaggle intake. The archive is arranged under `data/raw/IDRiD/B. Disease Grading/`, and `scripts/audit_idrid.py` produced `data/metadata/idrid_audit.json`. It confirms the expected image counts, dimensions, formats, labels, and class distributions, but it also detects six exact duplicate groups, including a train/test duplicate with conflicting labels. This is a failed leakage/integrity gate for treating the raw 516 files as independent samples; the model plan remains intentionally unimplemented until a duplicate-aware manifest policy is applied.
 
 This distinction matters: published statistics help us plan, but they do not prove that a particular local download is complete or correctly arranged.
 

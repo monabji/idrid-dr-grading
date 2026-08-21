@@ -1,0 +1,189 @@
+{
+  "root": "data\\raw\\IDRiD",
+  "expected": {
+    "train": {
+      "0": 134,
+      "1": 20,
+      "2": 136,
+      "3": 74,
+      "4": 49
+    },
+    "test": {
+      "0": 34,
+      "1": 5,
+      "2": 32,
+      "3": 19,
+      "4": 13
+    }
+  },
+  "splits": {
+    "train": {
+      "image_dir": "data\\raw\\IDRiD\\B. Disease Grading\\1. Original Images\\a. Training Set",
+      "labels_csv": "data\\raw\\IDRiD\\B. Disease Grading\\2. Groundtruths\\a. IDRiD_Disease Grading_Training Labels.csv",
+      "label_columns": [
+        "Image name",
+        "Retinopathy grade",
+        "Risk of macular edema ",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "image_count": 413,
+      "label_count": 413,
+      "class_counts": {
+        "0": 134,
+        "1": 20,
+        "2": 136,
+        "3": 74,
+        "4": 49
+      },
+      "missing_images_for_labels": [],
+      "unlabeled_images": [],
+      "dimensions": {
+        "4288x2848": 413
+      },
+      "modes": {
+        "RGB": 413
+      },
+      "formats": {
+        "JPEG": 413
+      }
+    },
+    "test": {
+      "image_dir": "data\\raw\\IDRiD\\B. Disease Grading\\1. Original Images\\b. Testing Set",
+      "labels_csv": "data\\raw\\IDRiD\\B. Disease Grading\\2. Groundtruths\\b. IDRiD_Disease Grading_Testing Labels.csv",
+      "label_columns": [
+        "Image name",
+        "Retinopathy grade",
+        "Risk of macular edema "
+      ],
+      "image_count": 103,
+      "label_count": 103,
+      "class_counts": {
+        "0": 34,
+        "1": 5,
+        "2": 32,
+        "3": 19,
+        "4": 13
+      },
+      "missing_images_for_labels": [],
+      "unlabeled_images": [],
+      "dimensions": {
+        "4288x2848": 103
+      },
+      "modes": {
+        "RGB": 103
+      },
+      "formats": {
+        "JPEG": 103
+      }
+    }
+  },
+  "duplicate_groups": [
+    [
+      "train:IDRiD_021",
+      "train:IDRiD_391"
+    ],
+    [
+      "train:IDRiD_028",
+      "train:IDRiD_327"
+    ],
+    [
+      "train:IDRiD_045",
+      "train:IDRiD_333"
+    ],
+    [
+      "train:IDRiD_073",
+      "train:IDRiD_375"
+    ],
+    [
+      "train:IDRiD_079",
+      "train:IDRiD_279"
+    ],
+    [
+      "train:IDRiD_118",
+      "test:IDRiD_064"
+    ]
+  ],
+  "duplicate_group_labels": [
+    {
+      "members": [
+        "train:IDRiD_021",
+        "train:IDRiD_391"
+      ],
+      "labels": {
+        "train:IDRiD_021": 1,
+        "train:IDRiD_391": 2
+      }
+    },
+    {
+      "members": [
+        "train:IDRiD_028",
+        "train:IDRiD_327"
+      ],
+      "labels": {
+        "train:IDRiD_028": 4,
+        "train:IDRiD_327": 3
+      }
+    },
+    {
+      "members": [
+        "train:IDRiD_045",
+        "train:IDRiD_333"
+      ],
+      "labels": {
+        "train:IDRiD_045": 2,
+        "train:IDRiD_333": 2
+      }
+    },
+    {
+      "members": [
+        "train:IDRiD_073",
+        "train:IDRiD_375"
+      ],
+      "labels": {
+        "train:IDRiD_073": 2,
+        "train:IDRiD_375": 2
+      }
+    },
+    {
+      "members": [
+        "train:IDRiD_079",
+        "train:IDRiD_279"
+      ],
+      "labels": {
+        "train:IDRiD_079": 1,
+        "train:IDRiD_279": 1
+      }
+    },
+    {
+      "members": [
+        "train:IDRiD_118",
+        "test:IDRiD_064"
+      ],
+      "labels": {
+        "train:IDRiD_118": 0,
+        "test:IDRiD_064": 3
+      }
+    }
+  ],
+  "cross_split_duplicate_groups": [
+    [
+      "train:IDRiD_118",
+      "test:IDRiD_064"
+    ]
+  ],
+  "checks": {
+    "split_counts_match_expected": true,
+    "all_labels_join_images": true,
+    "all_images_4288x2848_rgb_jpeg": true,
+    "no_exact_duplicate_images": false,
+    "no_cross_split_duplicates": false
+  }
+}

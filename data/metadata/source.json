@@ -1,0 +1,11 @@
+{
+  "dataset": "IDRiD disease grading",
+  "source_url": "https://www.kaggle.com/datasets/abdullahshafi315/indian-diabetic-retinopathy-image-datasetidrid",
+  "official_provenance_url": "https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid",
+  "downloaded_at": "2026-08-21",
+  "archive": "data/downloads/kaggle-idrid-complete.zip",
+  "archive_size_bytes": 198269504,
+  "archive_sha256": "532CDBA4B5B2DC05C5F95DAD357EC51A04097CFC4EA9DBC4D1713325E6F16A53",
+  "mirror_license": "CC BY-NC 4.0",
+  "raw_data_is_gitignored": true
+}
