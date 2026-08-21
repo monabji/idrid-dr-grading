@@ -1,0 +1,31 @@
+# IDRiD data and generated caches must stay outside Git.
+data/raw/
+data/cache/
+data/downloads/
+data/quarantine/
+
+# Model artifacts and experiment output.
+outputs/
+*.pt
+*.pth
+*.ckpt
+
+# Python environments and caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and secrets.
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
